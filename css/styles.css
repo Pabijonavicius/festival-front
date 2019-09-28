@@ -44,6 +44,7 @@ html {
 /* SHADOWS*/
 
 body {
+  font-size: var(--default-font-size);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   box-sizing: inherit;
@@ -188,8 +189,7 @@ body {
 /*====== SECTION TICKETS PREVIEW      =====    */
 .section-tickets {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding: 3rem;
 }
 .section-tickets__order-tickets {
@@ -209,7 +209,7 @@ body {
 .footer {
   padding: 2rem;
   background: var(--footer-bg);
-  font-size: var(--default-font-size);
+
   color: var(--primary-text-color);
 
   display: flex;
@@ -255,7 +255,6 @@ body {
 
 /* <------FORM-------> */
 form {
-  font-size: var(--default-font-size);
   margin: 3rem;
   display: flex;
   flex-direction: column;
@@ -301,3 +300,5 @@ form {
 .bd-bottom-2 {
   border-bottom: 0.2rem solid var(--secondary-text-color);
 }
+
+/* <=========LAYOUT==========> */
