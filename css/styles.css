@@ -17,6 +17,9 @@
   --heading-primary--medium: 5rem;
   --heading-secondary--medium: 3rem;
   --navbar-font-size: 2rem;
+
+  /* GRADIENTS */
+  --footer-bg: #111;
 }
 *,
 *::after,
@@ -135,7 +138,7 @@ body {
 
 .section-festival-preview {
   border: 1px solid rend;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,15 +148,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100%;
+  height: 110vh;
   z-index: -1;
   opacity: 0.8;
   overflow: hidden;
 }
 
 .section-festival-preview__bg-video__content {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   object-fit: cover;
 }
@@ -188,3 +190,51 @@ body {
 /*                                             */
 /*                                             */
 /*               SECTIONS  END                 */
+
+/*====== FOOTER =====    */
+.footer {
+  padding: 2rem;
+  background: var(--footer-bg);
+  font-size: var(--default-font-size);
+  color: var(--primary-text-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.footer__nav {
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.footer__nav__nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.footer__nav__nav-links__link-container {
+  padding: 1rem;
+}
+.footer__nav__nav-links__link-container__link,
+.footer__nav__nav-links__link-container__link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__nav__nav-links__link-container__link:hover {
+  border-bottom: 2px solid var(--primary-text-color);
+}
+
+/*                                             */
+/*                                             */
+/*                                             */
+/*                                             */
+/*               FOOTER  END                 */
+
+.divider {
+  width: 100%;
+  margin: 2rem;
+}
