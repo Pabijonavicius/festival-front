@@ -185,6 +185,20 @@ body {
 }
 /*====== SECTION FESTIVAL PREVIEW END =====    */
 
+/*====== SECTION TICKETS PREVIEW      =====    */
+.section-tickets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+.section-tickets__order-tickets {
+  width: 50vw;
+  border: 1px solid gainsboro;
+  border-radius: 2rem 1rem;
+}
+/*====== SECTION TICKETS PREVIEW END =====    */
+
 /*                                             */
 /*                                             */
 /*                                             */
@@ -237,4 +251,53 @@ body {
 .divider {
   width: 100%;
   margin: 2rem;
+}
+
+/* <------FORM-------> */
+form {
+  font-size: var(--default-font-size);
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin: 1rem 0 1rem 0;
+}
+
+.form-label {
+  padding: 0.1rem;
+  width: 100%;
+  display: block;
+}
+
+.form-input {
+  height: 3rem;
+  display: block;
+  width: 100%;
+}
+.form-group-other {
+  text-align: right;
+  padding: 1.5rem;
+}
+/* <------FORM-------> */
+/* <------BUTTON-------> */
+.button {
+  padding: 1rem;
+  background-color: dodgerblue;
+  color: white;
+  border: 0;
+}
+/* <------BUTTON-------> */
+
+/* <--------UTILS--------> */
+.center {
+  text-align: center;
+}
+.pd-top-2 {
+  padding: 2rem;
+}
+
+.bd-bottom-2 {
+  border-bottom: 0.2rem solid var(--secondary-text-color);
 }

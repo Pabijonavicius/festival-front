@@ -56,7 +56,89 @@
         </ul>
       </nav>
     </header>
-    <section class="section-tickets"></section>
+    <section class="section-tickets">
+      <div class="section-tickets__order-tickets">
+        <div class="heading-container center pd-top-2 bd-bottom-2">
+          <h1 class="heading-secondary--medium">
+            Order Tickets!
+          </h1>
+        </div>
+        <form class="form">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input
+              id="name"
+              class="form-input"
+              name="name"
+              type="text"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="surname">Your Surname</label>
+            <input
+              name="surname"
+              id="surname"
+              class="form-input"
+              type="text"
+              placeholder="Smith"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input
+              id="email"
+              name="email"
+              class="form-input"
+              type="email"
+              placeholder="johnsmith@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input
+              id="phone"
+              name="phone"
+              class="form-input"
+              type="text"
+              placeholder="44585285"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="birthdate">Birth Date</label>
+            <input
+              id="birthdate"
+              name="birthdate"
+              class="form-input"
+              type="date"
+              placeholder="1997/11/17"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="count">Tickets</label>
+            <input
+              id="count"
+              name="count"
+              class="form-input"
+              type="number"
+              value="1"
+              required
+            />
+          </div>
+          <div class="form-group form-group-other">
+            <span class="ticket-price">
+              One ticket price: <strong>65.88$</strong>
+            </span>
+          </div>
+          <button class="button">Order Tickets</button>
+        </form>
+      </div>
+    </section>
     <footer class="footer">
       <nav class="footer__nav">
         <ul class="footer__nav__nav-links">
