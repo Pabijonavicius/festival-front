@@ -199,6 +199,26 @@ body {
 }
 /*====== SECTION TICKETS PREVIEW END =====    */
 
+/*====== SECTION LINEUP       =====    */
+.section-lineup {
+  padding: 5rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+thead {
+  background-color: rgba(17, 17, 17, 0.801);
+  color: var(--navbar-bg);
+}
+td {
+  padding: 2rem;
+}
+tr {
+  border: 1px solid gainsboro;
+}
+/*====== SECTION LINEUP END =====    */
+
 /*                                             */
 /*                                             */
 /*                                             */
@@ -294,11 +314,17 @@ form {
   text-align: center;
 }
 .pd-top-2 {
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
+.pd-bottom-2 {
+  padding-bottom: 2rem;
+}
 .bd-bottom-2 {
   border-bottom: 0.2rem solid var(--secondary-text-color);
 }
 
+.secondary-color {
+  color: var(--secondary-text-color);
+}
 /* <=========LAYOUT==========> */
