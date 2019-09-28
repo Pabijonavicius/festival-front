@@ -201,7 +201,7 @@ body {
 
 /*====== SECTION LINEUP       =====    */
 .section-lineup {
-  padding: 5rem;
+  padding: 3rem;
 }
 table {
   border-collapse: collapse;
@@ -218,6 +218,40 @@ tr {
   border: 1px solid gainsboro;
 }
 /*====== SECTION LINEUP END =====    */
+/*====== SECTION VISIT        =====    */
+section {
+  min-height: 80vh;
+}
+.section-visit {
+  padding: 3rem;
+}
+.section-visit__articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #eee;
+  border: 1px solid gainsboro;
+  border-radius: 2rem 2rem;
+  padding: inherit;
+  margin: 2rem;
+}
+.section-visit__article {
+  flex: 1 1 0px;
+  margin: inherit;
+  border: inherit;
+  border-radius: inherit;
+  padding: inherit;
+  background-color: var(--primary-text-color);
+}
+
+.list {
+  padding: 1rem;
+}
+
+.list .list-item {
+  margin: 1rem;
+}
+/*====== SECTION VISIT END       =====    */
 
 /*                                             */
 /*                                             */
