@@ -1,0 +1,109 @@
+/*              DOCUMENT SETTINGS              */
+/*                                             */
+/*                                             */
+/*                                             */
+/*                                             */
+:root {
+  --navbar-bg: rgb(54, 190, 231);
+  --primary-text-color: #ffffff;
+  --navbar-border: transparent;
+  --secondary-text-color: rgb(233, 88, 127);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  box-sizing: inherit;
+}
+/*                                             */
+/*                                             */
+/*                                             */
+/*                                             */
+/*              DOCUMENT END                   */
+
+/*              NAVBAR                         */
+/*                                             */
+/*                                             */
+/*                                             */
+/*                                             */
+.navbar {
+  border: 1px solid var(--navbar-border);
+  font-size: 2rem;
+  background-color: var(--navbar-bg);
+  color: var(--primary-text-color);
+}
+.navbar__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar__items__item {
+  padding: 0 1.2rem 0 1.2rem;
+}
+
+.navbar__items__item__link {
+  padding: 0 0 1rem 0;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 0.2rem solid transparent;
+}
+
+#branding.navbar__items__item__link {
+  padding: 0;
+  border: 0;
+}
+
+.navbar__items__item__link:hover {
+  border-color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
+}
+
+#branding {
+  transform: all 0.5s;
+}
+
+#branding-img {
+  transition: all 1.5s ease;
+  height: 6rem;
+  width: auto;
+  margin: 0.5rem;
+}
+
+#branding-img:hover {
+  background-color: var(--secondary-text-color);
+  border-radius: 50%;
+  transform: rotate(360deg);
+  padding: 0.5rem;
+}
+
+.navbar__items__item--inverse {
+  border: 1px solid white;
+  padding: 1.2rem 1.2rem;
+  background-color: white;
+  color: var(--secondary-text-color);
+}
+
+.navbar__items__item--inverse:hover {
+  border-color: transparent;
+}
+/*                                             */
+/*                                             */
+/*                                             */
+/*                                             */
+/*               NAVBAR  END                   */

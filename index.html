@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rizzenados</title>
-    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar">
       <ul class="navbar__items">
-        <li class="navbar__items__item">
+        <li class="navbar__items__item navbar__items__item--inverse">
           <a href="#" class="navbar__items__item__link">Tickets</a>
         </li>
         <li class="navbar__items__item">
@@ -21,10 +25,12 @@
           <a href="#" class="navbar__items__item__link">Lineup</a>
         </li>
         <li class="navbar__items__item">
-          <a href="#" class="navbar__items__item__link">
-            <svg class="navbar__items__item__link__logo">
-              <use xlink:href="img/compact-disc.svg#Capa_1"></use>
-            </svg>
+          <a id="branding" href="#" class="navbar__items__item__link">
+            <img
+              id="branding-img"
+              src="img/brand.svg#Capa_1"
+              alt="Rizzenados Branding"
+            />
           </a>
         </li>
         <li class="navbar__items__item">
