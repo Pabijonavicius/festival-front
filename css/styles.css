@@ -186,19 +186,6 @@ body {
 }
 /*====== SECTION FESTIVAL PREVIEW END =====    */
 
-/*====== SECTION TICKETS PREVIEW      =====    */
-.section-tickets {
-  display: flex;
-  justify-content: center;
-  padding: 3rem;
-}
-.section-tickets__order-tickets {
-  width: 50vw;
-  border: 1px solid gainsboro;
-  border-radius: 2rem 1rem;
-}
-/*====== SECTION TICKETS PREVIEW END =====    */
-
 /*====== SECTION LINEUP       =====    */
 .section-lineup {
   /* padding: 3rem; */
@@ -255,8 +242,6 @@ section {
 /*====== SECTION VISIT END       =====    */
 
 /*====== SECTION GALLERY        =====    */
-.section-gallery {
-}
 .section-gallery__all-photos {
   display: flex;
   flex-direction: column;
@@ -271,7 +256,7 @@ section {
 }
 .section-gallery__photo-row__photo {
   border: 1px groove gainsboro;
-  width: 40vh;
+  width: 30vh;
   height: 100%;
 }
 .section-gallery__photo-row__photo > img {
@@ -281,8 +266,6 @@ section {
 /*====== SECTION GALLERY END       =====    */
 
 /*======  SECTION SPONSORS         =====    */
-.section-sponsors {
-}
 
 .section-sponsors__all {
   display: flex;
@@ -301,7 +284,7 @@ section {
 .section-sponsors__all__list-row__photo {
   margin: 1.2rem;
   height: 30vh;
-  width: 20vw;
+  width: 15vw;
   border: 1px solid gainsboro;
   text-align: center;
 }
@@ -392,7 +375,8 @@ section {
   border-bottom: 2px solid var(--primary-text-color);
 }
 
-/*                                             */
+/*                    SECTION                         */
+
 /*                                             */
 /*                                             */
 /*                                             */
@@ -403,6 +387,43 @@ section {
   margin: 2rem;
 }
 
+/* <------BUTTON-------> */
+.button {
+  padding: 1rem;
+  background-color: dodgerblue;
+  color: white;
+  border: 0;
+}
+/* <------BUTTON-------> */
+
+/* <=========LAYOUT==========> */
+section {
+  border-radius: 2rem 2rem;
+  margin: 2rem;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  background-color: gainsboro;
+  z-index: -100;
+}
+
+aside {
+  height: 50%;
+  width: 30%;
+  background-color: #ffffff;
+}
+
+/*--------> ASIDE = .order-tickets */
+.order-tickets {
+  padding: 1rem;
+  margin: 2rem;
+  border: 1px solid gainsboro;
+  border-radius: 2rem 2rem;
+}
 /* <------FORM-------> */
 form {
   margin: 3rem;
@@ -430,31 +451,44 @@ form {
   padding: 1.5rem;
 }
 /* <------FORM-------> */
-/* <------BUTTON-------> */
-.button {
-  padding: 1rem;
-  background-color: dodgerblue;
-  color: white;
-  border: 0;
-}
-/* <------BUTTON-------> */
 
-/* <--------UTILS--------> */
+/* --------> UTILITY CLASSES <---------- */
 .center {
-  text-align: center;
+  text-align: center !important;
 }
 .pd-top-2 {
-  padding-top: 2rem;
+  padding-top: 2rem !important;
 }
 
 .pd-bottom-2 {
-  padding-bottom: 2rem;
+  padding-bottom: 2rem !important;
 }
 .bd-bottom-2 {
-  border-bottom: 0.2rem solid var(--secondary-text-color);
+  border-bottom: 0.2rem solid var(--secondary-text-color) !important;
 }
 
 .secondary-color {
-  color: var(--secondary-text-color);
+  color: var(--secondary-text-color) !important;
 }
-/* <=========LAYOUT==========> */
+
+.navbar-color {
+  color: var(--navbar-bg) !important;
+}
+
+.form-heading {
+  font-size: 4rem !important;
+}
+/* --------> UTILITY CLASSES <---------- */
+
+.section-festival-preview {
+  background-color: transparent !important;
+  border: 0 !important;
+  margin: 0;
+  width: 100vw;
+}
+
+.list {
+  border: 1px solid gainsboro;
+  border-radius: 2rem 2rem;
+  padding: 3rem;
+}
