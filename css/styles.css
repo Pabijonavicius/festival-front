@@ -1,8 +1,4 @@
 /*              DOCUMENT SETTINGS              */
-/*                                             */
-/*                                             */
-/*                                             */
-/*                                             */
 :root {
   /* ###### COLOR VARIABLES #######*/
   --navbar-bg: rgb(54, 190, 231);
@@ -210,9 +206,6 @@ section {
   min-height: 80vh;
   padding: 3rem;
 }
-.section-visit {
-  /* padding: 3rem; */
-}
 .section-visit__articles {
   display: flex;
   flex-direction: row;
@@ -221,23 +214,16 @@ section {
   border: 1px solid gainsboro;
   border-radius: 2rem 2rem;
   padding: inherit;
-  margin: 2rem;
+  margin: 1rem;
 }
-.section-visit__article {
+
+.list-column {
   flex: 1 1 0px;
   margin: inherit;
   border: inherit;
   border-radius: inherit;
   padding: inherit;
   background-color: var(--primary-text-color);
-}
-
-.list {
-  padding: 1rem;
-}
-
-.list .list-item {
-  margin: 1rem;
 }
 /*====== SECTION VISIT END       =====    */
 
@@ -484,11 +470,14 @@ form {
   background-color: transparent !important;
   border: 0 !important;
   margin: 0;
-  width: 100vw;
 }
 
-.list {
+.section-content {
   border: 1px solid gainsboro;
+  padding: 2rem;
   border-radius: 2rem 2rem;
-  padding: 3rem;
+}
+
+.section-content .list {
+  padding: inherit;
 }
