@@ -571,4 +571,32 @@ form {
   .hamburger-container {
     margin: 2rem 0 1rem 85%;
   }
+
+  .footer__nav {
+    width: 100%;
+    border-radius: 2rem 2rem;
+  }
+  .footer__nav__nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+  }
+
+  .footer__nav,
+  .footer__nav__nav-links__link-container {
+    width: 100%;
+  }
+
+  .footer__nav__nav-links__link-container:not(:last-child) {
+    border-bottom: 1px solid gainsboro;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section-festival-preview__information__heading {
+    font-size: 3.5rem;
+  }
+  #brand-preview {
+    font-size: 1.5rem;
+  }
 }
