@@ -560,3 +560,15 @@ form {
     display: inline-block;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .section-festival-preview__information__heading {
+    font-size: 4.5rem;
+  }
+  #brand-preview {
+    font-size: 1.5rem;
+  }
+  .hamburger-container {
+    margin: 2rem 0 1rem 85%;
+  }
+}
