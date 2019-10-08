@@ -61,7 +61,29 @@ body {
   font-size: var(--navbar-font-size);
   background-color: var(--navbar-bg);
   color: var(--primary-text-color);
+  min-height: 5rem;
 }
+
+.hamburger {
+  display: none;
+  border: 1px solid gainsboro;
+  padding: 1rem;
+  border-radius: 1rem 1rem;
+  background-color: white;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+  border: 1px solid var(--navbar-bg);
+}
+
+.hamburger > .hamburger__dash {
+  width: 2rem;
+  height: 0.3rem;
+  background-color: var(--navbar-bg);
+  margin: 0.4rem 0;
+}
+
 .navbar__items {
   display: flex;
   flex-direction: row;
@@ -93,6 +115,9 @@ body {
   color: var(--secondary-text-color);
 }
 
+#brand-preview {
+  display: none;
+}
 #branding-img {
   height: 6rem;
   width: auto;
@@ -136,6 +161,7 @@ body {
 .section-festival-preview {
   border: 1px solid rend;
   height: 95vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,6 +172,7 @@ body {
   top: 0;
   left: 0;
   height: 110vh;
+  width: 100%;
   z-index: -1;
   opacity: 0.8;
   overflow: hidden;
@@ -153,7 +180,7 @@ body {
 
 .section-festival-preview__bg-video__content {
   height: 110vh;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
 }
 
@@ -439,6 +466,9 @@ form {
 /* <------FORM-------> */
 
 /* --------> UTILITY CLASSES <---------- */
+.inline-block {
+  display: inline-block !important;
+}
 .center {
   text-align: center !important;
 }
@@ -480,4 +510,53 @@ form {
 
 .section-content .list {
   padding: inherit;
+}
+
+/*    RESPONSIVE DESIGN  */
+@media screen and (max-width: 1280px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbar__items {
+    flex-direction: column;
+    justify-items: left;
+    align-items: flex-start;
+  }
+
+  .navbar__items__item:not(.navbar__branding-item),
+  .navbar__items__item__link {
+    border: 0;
+  }
+  .navbar__items__item:not(.navbar__branding-item) {
+    display: none;
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+  }
+
+  .navbar__branding-item {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+
+  #branding {
+    display: flex;
+  }
+  #brand-preview {
+    display: inline-flex;
+    align-self: center;
+    margin: 2rem 0 0 1rem;
+  }
+  .navbar__branding-item:hover {
+    color: gainsboro;
+  }
+
+  .hamburger-container {
+    top: 0;
+    position: absolute;
+    margin: 1rem 0 1rem 90%;
+  }
+  .hamburger {
+    display: inline-block;
+  }
 }
