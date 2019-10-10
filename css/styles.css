@@ -268,7 +268,7 @@ section {
   justify-content: center;
 }
 .section-gallery__photo-row__photo {
-  border: 1px groove gainsboro;
+  border-bottom: 1px groove gainsboro;
   width: 30vh;
   height: 100%;
 }
@@ -626,6 +626,16 @@ form {
   .section-experience__experiences__list__item__quote {
     width: auto;
     height: auto;
+  }
+}
+@media screen and (max-width: 866px) {
+  .section-gallery__photo-row {
+    flex-direction: column;
+  }
+
+  .section-gallery__photo-row__photo {
+    border: 0px groove gainsboro;
+    width: auto;
   }
 }
 @media screen and (max-width: 720px) {
