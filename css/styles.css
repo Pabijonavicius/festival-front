@@ -269,7 +269,7 @@ section {
 }
 .section-gallery__photo-row__photo {
   border-bottom: 1px groove gainsboro;
-  width: 30vh;
+  width: 18vw;
   height: 100%;
 }
 .section-gallery__photo-row__photo > img {
@@ -683,6 +683,10 @@ form {
     height: 70%;
     width: auto;
     border: 0px solid gainsboro;
+  }
+
+  .section-gallery__photo-row__photo {
+    width: 30vw;
   }
 }
 @media screen and (max-width: 866px) {
