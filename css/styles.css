@@ -566,19 +566,21 @@ form {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    margin-bottom: 2rem;
   }
   /*    TICKETS     */
   section {
     border: 1px solid gainsboro;
     margin: 0;
     border-radius: 0;
-    width: auto;
+    width: 60%;
   }
 
   aside {
   }
   /*  ASIDE   */
   .order-tickets {
+    width: 40%;
     border: 1px solid gainsboro;
     padding: 0;
     margin: 0;
@@ -595,8 +597,11 @@ form {
   }
   section {
     width: auto;
-    height: 100%;
+    min-height: 0;
     margin: 0;
+  }
+  aside.order-tickets {
+    width: 100%;
   }
 
   .section-visit__articles {
@@ -631,6 +636,78 @@ form {
 
   .footer__nav__nav-links__link-container:not(:last-child) {
     border-bottom: 1px solid gainsboro;
+  }
+
+  /*    TABLE     */
+
+  table,
+  thead,
+  tbody,
+  th,
+  tr {
+    display: block;
+    font-size: 1.25rem;
+  }
+
+  /* HIDES TABLE'S HEADINGS*/
+  thead > tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    display: block;
+    font-size: 1.25rem;
+    border: 1px solid #ccc;
+  }
+
+  td {
+    display: block;
+    font-size: 1.25rem;
+
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: center;
+  }
+  td:nth-of-type(1):before {
+    content: '';
+  }
+  td:nth-of-type(2):before {
+    content: 'Artist';
+  }
+  td:nth-of-type(3):before {
+    content: 'City';
+  }
+  td:nth-of-type(4):before {
+    content: 'Time';
+  }
+  td:nth-of-type(5):before {
+    content: 'Stage';
+  }
+  tr:nth-of-type(odd) {
+    background-color: gainsboro;
+  }
+
+  .heading-primary--big {
+    font-size: 3rem;
+  }
+
+  .section-visit__articles {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
   }
 }
 
