@@ -623,6 +623,10 @@ form {
   }
 }
 @media screen and (max-width: 1024px) {
+  .navbar__items__item {
+    padding: 2rem;
+  }
+
   main {
     flex-direction: column;
     width: auto;
