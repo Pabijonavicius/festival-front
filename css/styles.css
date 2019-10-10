@@ -764,3 +764,36 @@ form {
     font-size: 1.5rem;
   }
 }
+
+/* ################## SCHEMA */
+.section-schema-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  border: 5px solid var(--navbar-bg);
+}
+.section-schema__header {
+  padding: inherit;
+  border: inherit;
+}
+.section-schema__content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: inherit;
+  border: inherit;
+}
+
+.section-schema__content-wrapper > div {
+  padding: inherit;
+  border: inherit;
+}
+
+.section-schema__content-wrapper__section {
+  width: 70%;
+}
+.section-schema__footer {
+  padding: inherit;
+  border: inherit;
+}
