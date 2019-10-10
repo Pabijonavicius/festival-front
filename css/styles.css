@@ -627,6 +627,21 @@ form {
     width: auto;
     height: auto;
   }
+
+  .section-sponsors__all__list-row {
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .section-sponsors__all__list-row__photo {
+    margin: 0;
+    height: 70%;
+    width: auto;
+    border: 0px solid gainsboro;
+  }
 }
 @media screen and (max-width: 866px) {
   .section-gallery__photo-row {
