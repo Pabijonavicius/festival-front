@@ -545,8 +545,40 @@ form {
   border: inherit;
 }
 
+.gallery-photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-photos__img-container {
+  border: 1px solid gainsboro;
+  border-radius: 1rem 1rem;
+  width: 25rem;
+  height: auto;
+}
+.gallery-photos__item {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem;
+}
+
 /*    RESPONSIVE DESIGN  */
 @media screen and (max-width: 1280px) {
+  section.section-experience {
+    padding: initial 0 initial 0;
+  }
+  .section-experience__experiences {
+    border: 0;
+    margin: 0;
+  }
+
+  .section-experience__experiences__list {
+    flex-direction: column;
+  }
+
+  .section-experience__experiences__list__item__quote {
+    width: auto;
+    height: auto;
+  }
   .navbar {
     position: relative;
   }
@@ -621,12 +653,19 @@ form {
     border: 0;
     margin-bottom: 5rem;
   }
+
+  .gallery-photos__img-container {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .navbar__items__item {
     padding: 2rem;
   }
 
+  .section-festival-preview {
+    height: 100%;
+  }
   main {
     flex-direction: column;
     width: auto;
@@ -657,23 +696,6 @@ form {
     flex-direction: column;
   }
 
-  section.section-experience {
-    padding: initial 0 initial 0;
-  }
-  .section-experience__experiences {
-    border: 0;
-    margin: 0;
-  }
-
-  .section-experience__experiences__list {
-    flex-direction: column;
-  }
-
-  .section-experience__experiences__list__item__quote {
-    width: auto;
-    height: auto;
-  }
-
   .section-sponsors__all__list-row {
     flex-direction: column;
     justify-items: center;
@@ -691,6 +713,10 @@ form {
 
   .section-gallery__photo-row__photo {
     width: 30vw;
+  }
+
+  .gallery-photos__img-container {
+    width: 33%;
   }
 }
 @media screen and (max-width: 866px) {
@@ -803,6 +829,16 @@ form {
     padding: 0;
     border: 0;
     background-color: transparent;
+  }
+
+  .gallery-photos__img-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .gallery-photos__img-container {
+    width: 100%;
   }
 }
 
